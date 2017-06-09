@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Radiokarbonska metoda</title>
+		<!-- jQuery library -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <!-- Latest compiled JavaScript -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- Custom styles for this template -->
+		<link href="style.css" rel="stylesheet">
+	</head>
+
+	<body class="lang-en">
+
+		<!-- Navigation -->
+		<div id="gameMenu" class="row theme-background theme-border shadow">
+	        <!-- Zgornja vrstica za izbiro jezika in gumb za reset igre (vidna povsod razen na ekranu za izbiro jezika) -->
+	        <div class="hidden-xs col-sm-6">
+				<h3 class="lang lang-slo">Metoda z radioaktivnim ogljikom</h3>
+				<h3 class="lang lang-en">Radiocarbon dating</h3>
+	        </div>
+	        <div class="col-xs-12 col-sm-6">
+	            <div id="nav-btn-group" class="btn-group rightPos">
+	            	<a href="index.html" id="reloadButton" type="button" class="btn btn-secondary reset-btn">
+							<!--<span class="glyphicon glyphicon-refresh" ></span>-->
+							<span class="lang lang-en" >Reset</span>
+							<span class="lang lang-slo" >Ponastavi</span>
+					</a>
+	              	<button id="dropdownMenuButton" type="button" class="btn btn-secondary dropdown-toggle theme-border" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                	<span class="lang lang-en">Language</span>
+						<span class="lang lang-slo">Jezik</span>
+						<span class="caret"></span>
+					</button>
+					<ul id="langList" class="dropdown-menu theme-border" aria-labelledby="dropdownMenuButton">
+						<li><a id="langSlo" class="dropdown-item btn-slo" data-lang="slo" href="#">SLO</a></li>
+  					  	<li><a id="langEng" class="dropdown-item btn-en" data-lang="en" href="#">ENG</a></li>
+					</ul>
+	            </div>
+	        </div>
+	    </div>
+
+		<!-- Page Content - sm, md, lg -->
+		<div class="row hidden-xs">
+			<div class="col-sm-5 fullHeightCol">
+				<img class="zivaImg position-bottom-right" src="images/ziva-naslovnaa.png" />
+			</div>
+
+			<div class="col-sm-7 align-self-center text-center lang lang-slo">
+				<div class="col-sm-12">
+					<div class="bubble-bg">
+						<form id="myForm" class="quiz-form">
+							<label>Kaj meniš, kam v prihodnost moram odpotovati, da <sup>14</sup>C v kosti ne bo več?</label><br/>
+							<input id="r1" type="radio" name="myRadio" value="1" /> Nekam med leti 5.600 in 5.800. <br />
+							<input id="r2" type="radio" name="myRadio" value="2" /> <sup>14</sup>C v kosti ne bo nikoli popolnoma izginil. <br />
+							<input id="r3" type="radio" name="myRadio" value="3" /> V leto 5730. <br />
+						</form>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<button id="answerSLO" class="game-start btn btn-primary theme-border theme-text">Odgovori</button>
+				</div>
+			</div>
+
+			<div class="col-sm-7 align-self-center text-center lang lang-en">
+				<div class="col-sm-12">
+					<div class="bubble-bg">
+						<form id="myForm" class="quiz-form">
+							<label>In which year do I have to travel for the <sup>14</sup>C in the bone to be completely gone?</label><br/>
+							<input id="r11" type="radio" name="myRadio" value="1" /> Somewhere in between 5.600 and 5.800 AD. <br />
+							<input id="r21" type="radio" name="myRadio" value="2" /> The amount of <sup>14</sup>C will never be completely gone. <br />
+							<input id="r31" type="radio" name="myRadio" value="3" /> To the year 5730 AD. <br />
+						</form>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<button id="answerEn" class="game-start btn btn-primary theme-border theme-text">Continue</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Page Content - xs -->
+		<div class="row hidden-sm hidden-md hidden-lg">
+
+			<div class="col-xs-12 align-self-center text-center lang lang-slo">
+				<div class="col-xs-12 quiz-bubble-xs">
+					<form id="myForm" class="quiz-form">
+						<label>Kaj meniš, kam v prihodnost moram odpotovati, da <sup>14</sup>C v kosti ne bo več?</label><br/>
+						<input id="r12" type="radio" name="myRadio" value="1" /> Nekam med leti 5.600 in 5.800. <br />
+						<input id="r22" type="radio" name="myRadio" value="2" /> <sup>14</sup>C v kosti ne bo nikoli popolnoma izginil. <br />
+						<input id="r32" type="radio" name="myRadio" value="3" /> V leto 5730. <br />
+					</form>
+				</div>
+				<div class="col-xs-12">
+					<button id="answerXSslo" class="xs-screen-btn btn btn-primary theme-border theme-text">Odgovori</button>
+				</div>
+			</div>
+			<div class="col-xs-12 align-self-center text-center lang lang-en">
+				<div class="col-xs-12 quiz-bubble-xs">
+					<form id="myForm" class="quiz-form">
+						<label>In which year do I have to travel for the <sup>14</sup>C in the bone to be completely gone?</label><br/>
+						<input id="r13" type="radio" name="myRadio" value="1" /> Somewhere in between 5.600 and 5.800 AD. <br />
+						<input id="r23" type="radio" name="myRadio" value="2" /> The amount of <sup>14</sup>C will never be completely gone. <br />
+						<input id="r33" type="radio" name="myRadio" value="3" /> To the year 5730 AD. <br />
+					</form>
+				</div>
+				<div class="col-xs-12">
+					<button id="answerXSen" class="xs-screen-btn btn btn-primary theme-border theme-text">Continue</button>
+				</div>
+			</div>
+
+			<div class="col-xs-12">
+				<img class="zivaImg img-responsive position-center" src="images/ziva-naslovnaa.png" />
+			</div>
+		</div>
+
+		<footer class="footer hidden-xs">
+			<div id="gameMenu" class="row theme-background theme-border">
+		        <div class="col-xs-3 col-sm-6">
+					<!--<a href="index.html" id="reloadButton" type="button" class="btn btn-secondary reset-btn">
+						<span class="glyphicon glyphicon-refresh" ></span>
+					</a>-->
+		        </div>
+		        <div class="col-xs-9 col-sm-6">
+		            <label id="copyrightLabel" class="rightPos">Tjaša Jagodnik, Viki Petrovič - Copyright &copy; 2017</label>
+		        </div>
+		    </div>
+		</footer>
+
+		<div class="row xs-footer hidden-sm hidden-md hidden-lg">
+			<div id="gameMenu" class="row theme-background theme-border">
+		        <div class="col-xs-3 col-sm-6">
+					<!--<a href="index.html" id="reloadButton" type="button" class="btn btn-secondary reset-btn">
+							<span class="glyphicon glyphicon-refresh" ></span>
+					</a>-->
+		        </div>
+		        <div class="col-xs-9 col-sm-6 no-padding-col">
+		            <label id="copyrightLabel" class="rightPos">Tjaša Jagodnik, Viki Petrovič - Copyright &copy; 2017</label>
+		        </div>
+		    </div>
+		</div>
+
+		<!-- JS Bootstrtap breakpont detection -->
+	    <div class="device-xs visible-xs"></div>
+	    <div class="device-sm visible-sm"></div>
+	    <div class="device-md visible-md"></div>
+	    <div class="device-lg visible-lg"></div>
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="js/jquery/jquery.min.js"></script>
+		<script src="js/tether/tether.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

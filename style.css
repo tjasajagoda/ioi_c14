@@ -1,0 +1,259 @@
+/**
+Theme colors
+
+My color: RGB: 111, 31, 58
+
+#6f1f3a
+
+*/
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('font/MyriadPro-Regular.eot');
+  src: url('font/MyriadPro-Regular.woff2') format('woff2'),
+       url('font/MyriadPro-Regular.woff') format('woff'),
+       url('font/MyriadPro-Regular.ttf') format('truetype'),
+       url('font/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg'),
+       url('font/MyriadPro-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	background: #fff;
+	overflow-x: hidden;
+	/*background-image: url("images/wallpaper.png");*/
+	background-size: 3000px;
+}
+
+body, html {
+	font-family: MyriadPro-Regular !important;
+}
+
+.modal-title {
+	color: #6f1f3a;
+}
+
+.modal-txt {
+	font-size: 16px !important;
+}
+
+.modal-content {
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+
+.btn-modal:hover {
+	background-color: white !important;
+	color: #6f1f3a !important;
+}
+
+.ziva-modal {
+	max-height: 200px !important;
+	float: right !important;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(168,166,168,1);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(168,166,168,1);
+    box-shadow: 0px 5px 5px 0px rgba(168,166,168,1);
+}
+
+.gameContainer {
+	background-color: white;
+	color: white;
+	min-height: 400px;
+}
+
+.rightPos {
+    float: right !important;
+}
+
+h3, #copyrightLabel {
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+.dropdown-menu {
+	min-width: 100px !important;
+	width: 100px !important;
+}
+
+.no-padding-col {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+#copyrightLabel {
+	font-weight: normal;
+	font-size: 15px;
+}
+
+#nav-btn-group {
+	vertical-align: middle !important;
+	margin-top: 10px !important;
+}
+
+#gameMenu {
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+
+.fullHeightCol {
+	overflow: hidden !important;
+}
+
+.position-bottom {
+	display: block;
+	position: absolute;
+	bottom: 30%;
+	right: 30%;
+}
+
+.position-bottom-right {
+	display: block;
+	position: absolute;
+	bottom: 10%;
+	right:0;
+	margin: 0 auto !important;
+	/**vertical-align: bottom !important;*/
+}
+
+#gameMenu > div {
+	height: 55px !important;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100% !important;
+	height: 55px !important;
+}
+
+.xs-screen-btn {
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+
+	width: 40% !important;
+	height: 38px !important;
+	font-size: 15px !important;
+	font-weight: bold;
+	border-width: 2px;
+}
+
+.quiz-form {
+	text-align: left !important;
+	font-size: 25px;
+	line-height: 40px;
+    margin: 0 auto !important;
+}
+
+.xs-footer-label {
+	margin-left: 20px !important;
+}
+
+.xs-screen-btn:hover {
+	background-color: #d6dee1 !important;
+}
+
+.position-center{
+	margin: 0 auto !important;
+}
+
+.xs-footer {
+	width: 100% !important;
+	height: 55px !important;
+	/**margin-top: 20px !important;*/
+}
+
+.btn:hover, .btn:active {
+	background-color: lightgrey !important;
+}
+
+.game-start {
+	width: 40% !important;
+	height: 45px !important;
+	font-size: 20px !important;
+	font-weight: bold;
+	border-width: 2px;
+}
+
+.game-start:hover {
+	background-color: #d6dee1 !important;
+}
+
+.theme-background {
+	background-color: #6f1f3a !important;
+	color: white !important;
+}
+
+.theme-text {
+	color: #6f1f3a !important;
+}
+
+.theme-border {
+	border-color: #6f1f3a !important;
+}
+
+.btn {
+	background-color: white;
+	color: black;
+	border-radius: 3px !important;
+}
+
+p {
+	font-size: 2em;
+}
+
+
+body .lang {
+	display: none;
+}
+
+body.lang-en .lang-en {
+	display: inline-block;
+}
+
+body.lang-slo .lang-slo {
+	display: inline-block;
+}
+
+.bubble-bg {
+	font-size: 25px;
+	height: 35%;
+	width: 80%;
+	line-height: 1.5em;
+	padding: 5% !important;
+	//margin:2em 0 3em;
+    margin: 2em auto !important;
+	background-color: transparent !important;
+}
+
+.answer-txt {
+	font-size: 40px !important;
+	font-weight: bold;
+}
+
+.bubble-bg-xs {
+	font-size: 1.5em;
+	height: 35%;
+	width: 100%;
+	line-height: 1.5em;
+	padding: 5% !important;
+	margin:1.5em 0 1em;
+	background-color: transparent !important;
+}
+
+
+.quiz-bubble-xs {
+	font-size: 1.4em;
+	height: 35%;
+	width: 100%;
+	line-height: 1.5em;
+	padding: 5% !important;
+	margin:1.5em 0 1em;
+	background-color: transparent !important;
+}
+
+#reloadButton {
+    margin-right: 10px;
+}
